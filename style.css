@@ -782,3 +782,21 @@ p {
     display: block;
     
 }
+.floating-btn3 .menu{
+    position: absolute;
+    background: #fff;
+    padding:-20px;
+    font-size: 18px;
+    border-radius: 3px;
+    line-height: 1.4;
+    text-align: left;
+    width: 250px;
+    transform: translate(-180px, 20%);
+    box-shadow:0 2px 15px rgba(0, 0, 0, 0,);
+    pointer-events: painted;
+    display: none;
+}
+.floating-btn3:hover .menu {
+    display: block;
+    
+}
