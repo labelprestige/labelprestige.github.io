@@ -1,0 +1,407 @@
+@charset "UTF-8";
+.reste {
+  position: relative;
+  overflow: hidden;
+}
+
+.reste::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: #d5bf33;
+  opacity: 0.1;
+}
+
+.milieu {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto auto auto;
+      grid-template-rows: auto auto auto auto;
+  grid-gap: 5rem;
+  margin: 3rem 5rem;
+  padding: 2rem 3rem;
+  border: none;
+  -webkit-box-shadow: 1px 1px 10px #222;
+          box-shadow: 1px 1px 10px #222;
+}
+
+.milieu article {
+  padding: 1rem;
+  grid-column: 1/-1;
+}
+
+.milieu article img {
+  width: 400px;
+}
+
+.presentation, .presidente {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.presentation .texte, .presidente .texte {
+  margin-right: 1rem;
+  text-align: center;
+}
+
+.presentation .texte p, .presidente .texte p {
+  font-size: 1.1rem;
+  line-height: 2rem;
+}
+
+.presentation .texte p::first-letter, .presidente .texte p::first-letter {
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1024px) {
+  .presentation .texte p, .presidente .texte p {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .presentation .texte p, .presidente .texte p {
+    font-size: 1.5rem;
+  }
+}
+
+.presentation .texte h3, .presidente .texte h3 {
+  font-size: 2rem;
+  padding-bottom: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.presentation .texte h3::first-letter, .presidente .texte h3::first-letter {
+  color: #d5bf33b9;
+}
+
+.presentation .texte div, .presidente .texte div {
+  width: 700px;
+}
+
+.presentation .img, .presidente .img {
+  width: auto;
+  height: auto;
+}
+
+.actualité h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2rem;
+  padding-bottom: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.actualité h3::first-letter {
+  color: #d5bf33b9;
+}
+
+.main-scroll-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.icon {
+  color: #222;
+  opacity: 0.1;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  background: transparent;
+  font-size: 3rem;
+  outline: none;
+  border: none;
+  padding: 0 20px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.icon:hover {
+  color: #d5bf33;
+  opacity: 0.8;
+}
+
+.cover {
+  position: relative;
+  width: 80%;
+}
+
+.cover .scroll-images {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: auto;
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+.cover .scroll-images::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.cover .scroll-images .child {
+  cursor: pointer;
+  overflow: hidden;
+  min-width: 25rem;
+  height: 18.75;
+  text-align: center;
+  margin-right: 1rem;
+}
+
+.cover .scroll-images .child p {
+  font-size: 1.1rem;
+  line-height: 2rem;
+  padding: 0px 2rem;
+}
+
+.cover .scroll-images .child p::first-letter {
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1024px) {
+  .cover .scroll-images .child p {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .cover .scroll-images .child p {
+    font-size: 1.5rem;
+  }
+}
+
+.cover #scrolll:checked ~ .last {
+  -webkit-transform: translateX(-350px);
+          transform: translateX(-350px);
+}
+
+.cover #scrollr:checked ~ .last {
+  -webkit-transform: translateX(350px);
+          transform: translateX(350px);
+}
+
+.secours {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 16.9rem;
+  width: 25rem;
+  overflow: hidden;
+}
+
+.child-img {
+  position: center;
+  border: 1px groove #c5c5c5;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.nombres {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tableau {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 85%;
+  background-color: #c5c5c5;
+  position: relative;
+}
+
+.tableau::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.2;
+}
+
+.tableau div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  width: 30%;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.tableau div p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  font-weight: normal;
+}
+
+.presidents-words {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.presidents-words h3 {
+  font-size: 2rem;
+  padding-bottom: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.presidents-words h3::first-letter {
+  color: #d5bf33b9;
+}
+
+.presidents-words p {
+  font-size: 1.1rem;
+  line-height: 2rem;
+  width: 65%;
+  text-align: center;
+}
+
+.presidents-words p::first-letter {
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1024px) {
+  .presidents-words p {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .presidents-words p {
+    font-size: 1.5rem;
+  }
+}
+
+/* media queries */
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+  .presidente .pre {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-right: 0;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+  .presidente .texte {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .presentation, .presidente {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .presentation .texte, .presidente .texte {
+    margin-right: 0;
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  html {
+    font-size: 8px;
+  }
+  .milieu {
+    margin: 3rem 2rem;
+    padding: 2rem 1rem;
+  }
+  .presentation .texte, .presidents-words p {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .presentation {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .secours {
+    height: 14rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
