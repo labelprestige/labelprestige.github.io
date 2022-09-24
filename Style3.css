@@ -1,5 +1,7 @@
 
-
+html {
+  font-size: 18px;
+}
 body{
   background-color:beige;
 }
@@ -88,9 +90,7 @@ footer {
  
 
 
-  html {
-    font-size: 18px;
-  }
+  
   
   *, ::after, ::before {
     margin: 0;
