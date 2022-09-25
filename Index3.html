@@ -125,6 +125,97 @@ h4{
     margin-top: 12rem;
   }
 }
+.cota {
+  position: relative;
+  -webkit-box-shadow: 1px 1px 10px #222;
+          box-shadow: 1px 1px 10px #222;
+  width: 40rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.cota h3 {
+  position: relative;
+  left: 65%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  color: #f52020;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.cota > p, .cota > div {
+  margin-bottom: 1rem;
+}
+
+.payement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.payement span {
+  line-height: 1.5rem;
+  font-weight: bold;
+}
+
+.paye {
+  position: relative;
+}
+
+.button-info {
+  position: relative;
+  left: 70%;
+  top: 30%;
+  padding: 1rem;
+  border-radius: 15px;
+  background-color: #d5bf33;
+  margin-top: 10px;
+}
+
+.button-info:hover {
+  cursor: pointer;
+}
+
+.description-cota {
+  z-index: 100;
+  width: 30rem;
+  padding: 1.5rem;
+  margin: 10px 0 25px;
+  -webkit-box-shadow: 1px 1px 10px #222;
+          box-shadow: 1px 1px 10px #222;
+  display: none;
+}
+
+#info:checked ~ .description-cota {
+  display: block;
+}
 
     </style>
     <title>CONCOURS - Le Label Prestige</title>
