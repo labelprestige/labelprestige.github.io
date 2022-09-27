@@ -25,6 +25,8 @@ a {
   overflow-y: scroll;
   -ms-scroll-snap-type: y mendatory;
       scroll-snap-type: y mendatory;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.918)), to(rgba(206, 221, 255, 0.733)));
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.918), rgba(206, 221, 255, 0.733));
 }
 
 .acceuil {
