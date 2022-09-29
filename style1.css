@@ -54,8 +54,6 @@ p span {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     position: relative;
     left: 50%;
     -webkit-transform: translateX(-50%);
