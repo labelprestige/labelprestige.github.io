@@ -58,6 +58,8 @@ p span {
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
+             -ms-flex-direction: column;
+                  flex-direction: column;
   }
   .container {
     padding: 1rem;
