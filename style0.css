@@ -497,13 +497,13 @@ footer .end {
 
 @-webkit-keyframes apparait {
   100% {
-    color: #c5c5c5;
+    color: #fff;
   }
 }
 
 @keyframes apparait {
   100% {
-    color: #c5c5c5;
+    color: #fff;
   }
 }
 
